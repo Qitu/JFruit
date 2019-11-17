@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
+    
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">    
+    <script src="../script/sweetalert2.all.min.js"></script>
+        
+    <script src="../script/mdl/mdl_tem.js"></script>
+    
+    
+    
+</head>
+
+</head>
+<body>
+   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header id="hd" class="mdl-layout__header wtx" style="background-color:#455A64">
+         <div onclick="api.openWin({name: 'Lobby',url: './Lobby.html',animation:{type:'reveal', subType:'from_top', duration:300}});" role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">arrow_back</i></div>
+         <div style="margin-top:17px" class="mdl-layout__header-row">    
+               <span class="mdl-layout-title" id="_0">...</span>   
+                
+      
+        </div>   
+        
+    </header>
+     
+     
+     
+    <main class="mdl-layout__content">
+       <div style="margin: 25px auto;">
+          <div style="padding: 0 16px;">	
+          
+       
+		     <div id="main_" style="width: 92%;overflow: auto; margin:auto auto auto auto;">					
+		<h5><strong id="_1">...</strong></h4>
+		<p style="color:rgba(0,0,0,0.5)" id="_2"></p>
+		<a id="n"></a>
+		<br>	
+		<br>
+		<table> 
+		  <tr for="gender">
+		     <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" value="ZABA" name="gender" class="mdl-radio__button" checked> 
+		           <span class="mdl-radio__label">ZABA</span> 
+		       </label> 	 
+		     </td> 
+		     
+		     <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" name="gender" value="KKM" class="mdl-radio__button" > 
+		           <span class="mdl-radio__label">KKM</span> 
+		     </label> 	
+		   </td> 
+		   
+		   <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" name="gender" value="Omar" class="mdl-radio__button" > 
+		           <span class="mdl-radio__label">Omar</span> 
+		     </label> 	
+		   </td> 
+		   
+		   </tr>
+		   <tr for="gender">
+		   
+		   <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" name="gender" value="VillaTr" class="mdl-radio__button" > 
+		           <span class="mdl-radio__label">VillaTr..</span> 
+		     </label> 	
+		   </td> 
+		   
+		   <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" name="gender" value="Kajang" class="mdl-radio__button" > 
+		           <span class="mdl-radio__label">Kajang</span> 
+		     </label> 	
+		   </td> 
+		   
+		   <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" name="gender" value="FEP" class="mdl-radio__button" > 
+		           <span class="mdl-radio__label">FEP</span> 
+		     </label> 	
+		   </td> 
+		   
+		   <tr>
+		   <tr for="gender">
+		   
+		   <td> 
+		       <label class="mdl-radio mdl-js-radio"> 
+		         <input type="radio" name="gender" value="FTSM" class="mdl-radio__button" > 
+		           <span class="mdl-radio__label">FTSM</span> 
+		     </label> 	
+		   </td> 
+		   
+		 </tr> 
+	 </table> 
+
+	      </div>					
+	   
+	   
+	   
+	 
+	      
+	      <div class="mdl-cell mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				       <input type="text" maxlength="30" minlength="2" id="xx" class="mdl-textfield__input"/> 
+				       <label class="mdl-textfield__label">详细信息/eg:Block 3,Room307,Andy</label>
+				       <span class="mdl-textfield__error">格式错误/Too (short/long)</span>
+				   </div> 	   
+	      
+	      <div class="mdl-cell mdl-cell--12-col ">
+		     <button onclick="_ajax()" class="mdl-cell mdl-cell--6-col mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-color-text--white" style="background-color:#455A64"><b>Ensure / 确认</b></button> 	
+          </div>
+	       
+  	   </div>				
+	 </div>		
+	 
+	 	
+    </main>   
+  </div>
+  
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/edit_information.js"></script>
+<script type="text/javascript" src="../script/Language/Information.js"></script>
+<script type="text/javascript">
+
+ 
+  apiready = function(){    
+    $api.fixStatusBar($api.dom('hd'));
+    _lang(3);
+    get_Location();
+    api.addEventListener({
+       name: 'keyback'
+    }, function(ret, err){   
+       
+      api.openWin({
+         name: 'Lobby',
+         url: './Lobby.html',
+         animation:{
+                type:"reveal",
+                subType:"from_top", 
+                duration:500   
+            },
+      });
+    });
+  }
+    
+</script>
+</html>

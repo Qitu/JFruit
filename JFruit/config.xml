@@ -1,0 +1,29 @@
+<widget id="YOUR WID" version="0.0.1">
+  <name>JFruit</name>
+  <description/>
+  <author email="969977237@qq.com" href="http://www.apicloud.com">Andy</author>
+  <content src="index.html"/>
+  <preference name="pageBounce" value="false"/>
+  <preference name="appBackground" value="rgba(0,0,0,0.9)"/>
+  <preference name="windowBackground" value="rgba(0,0,0,0.9)"/>
+  <preference name="frameBackgroundColor" value="rgba(0,0,0,0.0)"/>
+  <preference name="hScrollBarEnabled" value="true"/>
+  <preference name="vScrollBarEnabled" value="true"/>
+  <preference name="autoLaunch" value="true"/>
+  <preference name="fullScreen" value="false"/>
+  <preference name="autoUpdate" value="true"/>
+  <preference name="smartUpdate" value="true"/>
+  <preference name="debug" value="true"/>
+  <preference name="statusBarAppearance" value="true"/>
+  <meta-data name="com.google.android.geo.API_KEY" value="AIzaSyBpbz9L9iS53XiQBSV0RGjbOaUHc1L4xVU"/>
+  <permission name="readPhoneState"/>
+  <permission name="camera"/>
+  <permission name="record"/>
+  <permission name="location"/>
+  <permission name="fileSystem"/>
+  <permission name="internet"/>
+  <permission name="bootCompleted"/>
+  <permission name="hardware"/>
+  <access origin="*"/>
+  <feature name="smsVerify"> <param name="android_app_key" value="100388a6fc0ca"/> <param name="android_app_secret" value="066272b7d28c530a5205a97fda94bd54"/> <param name="ios_app_key" value="21c017da39e61"/> <param name="ios_app_secret" value="7a4d3a43911e27e0e01c34f69457c29b"/> </feature>
+</widget>

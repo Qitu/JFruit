@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<!--    这是积土客户端          made by Andy        --->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <title>api</title>
+    <link rel="stylesheet" type="text/css" href="./css/api.css" />
+</head>
+
+<body>
+
+<script type="text/javascript" src="./script/api.js"></script>
+</body>
+<script>
+
+    apiready=function(){
+        api.getPrefs({
+       key: 'phone' },
+     function(ret, err) {
+        //alert(ret.value);
+        if(ret.value == ""){
+           api.openWin({
+              name: "Lang",
+              url: 'html/Lang.html',
+           });
+        }else{
+           api.openWin({
+              name: "Lobby",
+              url: 'html/Lobby.html',
+           });
+        }
+     });
+
+   }
+</script>
+</html>

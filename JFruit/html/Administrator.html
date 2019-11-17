@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+    <link rel="stylesheet" href="../css/Lobby_box.css">
+    
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">    
+    <script src="../script/sweetalert2.all.min.js"></script>
+    
+    <script src="../script/mdl/mdl_tem.js"></script>
+    
+    
+</head>
+    <style>
+       .bill-box{
+           position: absolute;
+           top:0px;
+           width:100%;
+           height:100%;
+           z-index:5;
+           display:none;
+           background:rgba(0,0,0,0.2);
+       }
+    </style>
+</head>
+<body>
+
+   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   
+      <header class="mdl-layout__header wtx" style="background-color:#455A64">          
+            <div role="button" class="mdl-layout__drawer-button" onclick="api.openWin({name: 'Lobby',url: './Lobby.html'});">
+                <i class="material-icons md-42">arrow_back</i>
+            </div>              
+            <div style="margin-top:18px" class="mdl-layout__header-row">    
+                 <span class="mdl-layout-title">当前订单</span>   
+                <div class="mdl-layout-spacer"></div>     
+                
+              <button style="background-color:#455A64;" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white" onclick="_shop()">  
+              <i class="material-icons md-42">store</i>          
+              </button>    
+              
+              <button style="background-color:#455A64;" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white" onclick="_ajax()">  
+              <i class="material-icons md-42">refresh</i>          
+              </button>    
+           </div>   
+     </header>
+     
+     
+     <div class="bill-box" id="bg" style="text-align:center; padding-top:100px">
+        <div class="mdl-cell mdl-card mdl-shadow--2dp" style="text-align:left; min-height:0px"> 
+            <div class="mdl-card__title"> 
+            <h2 class="mdl-card__title-text">详细信息</h2>
+            </div> 
+            
+            <div class="mdl-card__supporting-text">
+            
+           <div id="msg"></div>
+                          
+            
+             </div>
+         
+            
+            <div class="mdl-card__menu"> 
+            <button class="mdl-button mdl-button--icon" onclick="Close_info()">
+               <i class="material-icons">clear</i>
+             </button>
+            </div> 
+            
+          </div> 
+     </div>
+     
+     
+     
+    <main class="mdl-layout__content" style="width:100%">
+   
+   
+    
+   <div class="page-content" style="padding: 10px;">					
+      
+      
+      <img style="margin-bottom:10px; width:100%" src="../image/up.png">
+      
+      					<div class="mdl-shadow--2dp" style="width: 100%;overflow: auto;">			
+      					
+      					 <table class="mdl-data-table mdl-js-data-table" style="width:100%"> 
+      						 <thead> 
+      						   <tr>
+      						     <th class="mdl-data-table__cell--non-numeric">订单号</th>
+      						     <th>买家</th><th>住处</th> <th>店铺</th> <th>内容</th>  <th>操作</th>
+      						     </tr> 
+      						 </thead> 
+      				<tbody id="bill-box"> 
+      		    
+         </tbody> 
+       </table>     
+   	</div>		  		
+   	
+   	
+		</div>
+   
+    </main>   
+  </div>
+  
+</body>
+
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/Order_list.js"></script>
+<script type="text/javascript">
+
+ 
+ 
+ 
+ apiready = function(){
+ 
+   $api.fixStatusBar($api.dom('hd'));      
+   _ajax();
+   api.addEventListener({
+       name: 'keyback'
+    }, function(ret, err){   
+       api.openWin({name: 'Lobby',url: './Lobby.html'});
+   });
+   
+ }
+ 
+    
+</script>
+</html>

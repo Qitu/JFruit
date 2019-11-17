@@ -1,0 +1,9 @@
+.shop-box{
+   border:1px solid rgba(0,0,0,0.4);
+   padding:15px 7px 15px 7px;
+   height:100px;
+}
+
+.iconn{
+   display:inline-block;
+}

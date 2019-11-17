@@ -1,0 +1,46 @@
+.bill-time{
+   font-size:12px;
+   color:rgba(0,0,0,0.5);
+}
+
+
+.money-show{
+   text-align:center; 
+   margin:30px;
+}
+
+
+.bill-cell{
+   font-size:15px;
+   color:rgba(0,0,0,0.5);
+}
+
+
+.bill-money{
+   margin-top:15px; 
+   font-size:35px;
+}
+
+
+.bill-info{
+   margin-top:15px; 
+   line-height:25px;
+}
+
+.shop-text{
+   color:#0066CC; 
+   margin-left:25px;
+}
+
+.shop-info{
+   display:inline-block;
+   color:rgba(0,0,0,0.6); 
+   width:65%;
+   padding-left:25px;
+}
+
+.shop-phone{
+   color:#0066CC; 
+   margin-left:25px; 
+   text-decoration:underline;
+}

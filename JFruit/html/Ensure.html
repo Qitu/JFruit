@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+    <link rel="stylesheet" href="../css/view.css">
+    
+    <script src="../script/mdl/mdl_tem.js"></script>
+    <script src="../script/mdl/jquery-1.11.2.min.js" type="text/javascript"></script>
+    
+    
+    
+</head>
+  <style>
+    b{
+       font-family: Verdana, Geneva, sans-serif; 
+    }
+ 
+    .bill-box{
+           position: absolute;
+           top:30px;
+           left:25px;
+           z-index:5;
+    }
+  </style>
+</head>
+<body  style="maxheight:100%">
+   <div id="hd" class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+     
+      <div class="bill-box">
+         <button onclick="api.closeWin()" class="mdl-button mdl-js-button"><i class="material-icons">clear</i></button>
+     </div>
+     
+    <main class="mdl-layout__content">
+       <div style="margin: 75px auto;">
+          <div style="padding: 0 16px;">	
+          
+          <div class="mdl-cell mdl-cell--6-col" style="padding-top:100px;">
+           <p style="color:rgba(0,0,0,0.4); font-weight:700; font-size: 15px; padding-left:9px;" id="_0"></p>    
+          
+          <p style="color:rgba(0,0,0,0.4); font-weight:700; font-size: 15px; padding-left:9px; display:inline" id="_1">...
+          <p style="color:rgba(0,0,0,0.4); font-weight:700; font-size: 15px; padding-left:6px; display:inline" id="country"></p>
+          <p style="color:rgba(0,0,0,0.4); font-weight:700; font-size: 15px; padding-left:6px; display:inline" id="phone">13357220477</p>
+         </p>
+          </div>			
+      
+          <div class="mdl-cell" style="width:100%; margin-top:30px;">
+	                 
+	        <div class="mdl-cell mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				       <input id="code" type="number" maxlength="6" minlength="2" class="mdl-textfield__input"/> 
+				       <label class="mdl-textfield__label">验证码/SMS Code</label>
+				       <span class="mdl-textfield__error">格式错误</span>
+				   </div> 	      
+				   
+				   
+	 </div>
+	 
+          
+          <div style="text-align:center; width: 100%; margin-top:40px;">
+         
+          <a onclick="Ensured()" class="mdl-button mdl-button--colored mdl-color-text--green mdl-js-button mdl-js-ripple-effect" style="display:inline-block" id="_2">...</a>                               
+          <a id="btn" onclick="reSend()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="display:inline-block">Resend</a>       
+          	</div>
+          
+           
+              
+	      </div>
+	      
+  	   </div>				
+	 </div>			 
+	 	
+    </main>   
+  </div>
+  
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/User_ensure.js"></script>
+<script type="text/javascript" src="../script/Language/Information.js"></script>
+<script type="text/javascript">
+  
+   apiready = function(){
+   
+   _lang(2);
+   
+   $api.fixStatusBar($api.dom('hd')); 
+   
+   reSend();
+   var btn = document.getElementById('btn');
+   btn.onclick=function(){time(this);}
+   btn.click();
+      $("#phone").text ((api.pageParam.phone).toString());
+      $("#country").text((api.pageParam.country).toString());
+      
+      var smsVerify = api.require('smsVerify'); smsVerify.register(function(ret, err){ if(ret.status){ 
+    //api.alert({msg: '注册成功'});     
+     }else{ 
+     
+     api.alert({
+     msg: err.code+' 短信模块注册失败，可能是服务器问题，请联系积土管理员'});
+     api.closeWidget({ silent:true });
+      }
+     });
+   
+    }
+    
+    
+</script>
+</html>

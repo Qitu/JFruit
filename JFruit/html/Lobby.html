@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+    <link rel="stylesheet" href="../css/Lobby_box.css">
+    
+    
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">    
+    <script src="../script/sweetalert2.all.min.js"></script>
+    
+    
+    <script src="../script/mdl/mdl_tem.js"></script>
+    
+    
+<head>
+    <style>
+       .bill-box{
+           position: absolute;
+           bottom:30px;
+           right:20px;
+           z-index:5;
+       }
+       ._bill-box{
+           position: absolute;
+           bottom:100px;
+           right:20px;
+           z-index:5;
+       }
+      .flake{
+           z-index:5;
+      }
+    </style>
+</head>
+<body>
+   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header id="top_" class="mdl-layout__header wtx" style="background-color:#455A64">          
+            <div role="button" class="mdl-layout__drawer-button">
+                <i class="material-icons md-42">subject</i>
+            </div>              
+            <div style="margin-top:18px" class="mdl-layout__header-row">    
+                 <span class="mdl-layout-title" id="_0">...</span>   
+            <div class="mdl-layout-spacer"></div>       
+           </div>   
+     </header>
+     
+     
+     <div class="mdl-layout__drawer mdl-color-text--white" style="border: 0px">
+       <header class="lobby-set" style="background:#455A64">
+           
+        </header>
+         <nav class="demo-navigation mdl-navigation" style="background: #FFFFFF" id="side">
+            <a onclick="Go('Bill','movein','from_left')" class="mdl-navigation__link side-one" style="color: rgba(0,0,0,0.86)">
+               <i class="material-icons md-42" style="color: rgba(0,0,0,0.7)">assignment</i>
+               <div id="_7">历史订单</div>
+            </a>    
+            
+             <a onclick="Go('Lang','movein','from_left')" class="mdl-navigation__link side-one" style="color: rgba(0,0,0,0.86)">
+               <i class="material-icons md-42" style="color: rgba(0,0,0,0.7)">public</i>
+               <div id="_8">选择语言</div>
+            </a>    
+            
+            
+            <hr />
+            
+            <a onclick="Go('about','movein','from_left')" class="mdl-navigation__link side-one" style="color: rgba(0,0,0,0.86)">
+               <i class="material-icons md-42" style="color: rgba(0,0,0,0.7)">nature_people</i>
+               <div id=_9>关于积土</div>
+            </a>  
+            
+            <a onclick="Relogin()" class="mdl-navigation__link side-one" style="color: rgba(0,0,0,0.86)">
+               <i class="material-icons md-42" style="color: rgba(0,0,0,0.7)">recent_actors</i>
+               <div id="_10">退出登录</div>
+            </a>    
+               
+         </nav>
+     </div>
+    
+    
+     
+     <div class="bill-box">
+         <button onclick="Go('Bill','movein','from_left')" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color-text--white" style="background:#455A64"><i class="material-icons">assignment</i></button>
+     </div>
+     
+     <div class="_bill-box">
+         <button onclick="Edit_('地址信息','2')" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--red-300 mdl-color-text--white"><i class="material-icons">mode_edit</i></button>
+     </div>     
+     
+     
+    <main class="mdl-layout__content" style="width:100%; padding-bottom:16px">
+    
+   <div class="mdl-cell square-card mdl-card mdl-shadow--2dp" style="margin-top:20px"> 
+        <div style="padding-bottom:0px" class="mdl-card__title">
+         <h2 class="mdl-card__title-text" id="_4">零食铺</h2>
+        </div> 
+       
+       <div id="first" class="mdl-card__supporting-text" onclick="Go('Production_first','movein','from_bottom')"> 
+           <img style="width:100%" src="../image/sneak.jpg" />
+       </div>
+        <div class="mdl-card__actions mdl-card--border">
+
+         <div style="display:block; width:100%; padding:8px; font-size:15px; color:#900C3F">
+          <b id="news">   
+             积土特色零食店铺
+          </b> 
+          </div>
+                
+        <button onclick="Go('Production_first','movein','from_bottom')" class="mdl-shadow--2dp mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--red-300 mdl-color-text--white">  
+                       <b id="_6">Enter</b>
+       </button>  
+         
+        <button onclick="Go('Help_one','push','from_top')" class="mdl-shadow--2dp mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-color-text--white" style="background:#455A64">  
+            <b id="_5">帮 助</b>
+       </button>                   
+       
+       
+        </div> 
+        
+      </div>            
+      
+      
+      
+  	  
+  	   	<div class="mdl-cell square-card mdl-card mdl-shadow--2dp" style="margin-top:20px"> 
+        <div style="padding-bottom:0px" class="mdl-card__title">
+         <h2 class="mdl-card__title-text" id="_3">水果区</h2>
+        </div> 
+       
+       <div id="first" class="mdl-card__supporting-text" onclick="Fruit()"> 
+           <img style="width:100%" src="../image/fruit.jpg" />
+       </div>
+        <div class="mdl-card__actions mdl-card--border">
+
+          <button id="f" onclick="Fruit()" class="mdl-shadow--2dp mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored mdl-color--red-300 mdl-color-text--white">  
+                       <b id="_6">Enter</b>
+       </button>  
+
+        <button class="mdl-button mdl-button--colored">
+        <b id="_12"></b><b> : 3 RM</b>
+        </button>  
+    
+    </div> 
+        
+      </div>               
+     
+    </main>   
+  </div>
+  
+</body>
+
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/Lobby_loader.js"></script>
+<script type="text/javascript" src="../script/snow.js"></script>
+<script type="text/javascript" src="../script/Language/Information.js"></script>
+<script type="text/javascript">
+
+ var mkeyTime=new Date().getTime();
+
+
+ apiready = function(){
+    _lang(4); $api.fixStatusBar($api.dom('top_'));   
+     
+    var lang_ = api.getPrefs({ sync: true, key: 'lang' });
+    
+    if(lang_ != ""){
+    api.getPrefs({ 
+       key: 'phone' 
+       },function(ret, err) { 
+        if(ret.value == ""){
+           alert("出现了错误:"+err);
+     api.closeWidget({ silent:true });
+        }else{
+           $("#phone").text(ret.value);
+          _ajax();           
+        }
+      });    
+      
+    api.getPrefs({ 
+       key: 'role' 
+       },function(ret, err) { 
+        if(ret.value == ""){
+           }else{
+           $("#side").prepend('<a onclick="Go(&quot;Administrator&quot;,&quot;movein&quot;,&quot;from_left&quot;)" class="mdl-navigation__link side-one" style="color: rgba(0,0,0,0.86)"><i class="material-icons md-42" style="color: rgba(0,0,0,0.7)">perm_contact_calendar</i>管理员 / OP</a>');
+        }
+      });      
+      
+      
+      
+      //$("#china").attr("src","../image/"+(Math.ceil(Math.random()*7))+".jpg");
+      //$("#title").attr("src","../image/title"+(Math.ceil(Math.random()*3))+".jpg");
+     
+     $(function(){ $("body").snow({'durationMillis':20000}); 
+     
+     });
+     
+    //$('#f').removeAttr("disabled"); 
+     
+    //拦截退回键
+    api.addEventListener({
+       name: 'keyback'
+    }, function(ret, err){   
+       if((new Date().getTime() - mkeyTime) > 2000){
+         mkeyTime = new Date().getTime();
+         api.toast({msg: 'Tap it again to exit', location: 'bottom', duration:2000 });
+       }else{
+       api.closeWidget({ silent:true });
+       }
+    });        
+   }else{
+      api.openWin({
+              name: 'Lang',
+              url: './Lang.html'
+      });
+   }
+ }
+ 
+    
+</script>
+</html>

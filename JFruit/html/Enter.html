@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>      
+
+<body onclick="Go();" style="background-image: url(../image/enter.jpg); background-size: 100%">
+</body>
+   <script type="text/javascript" src="../script/api.js"></script>
+  <script type="text/javascript">
+ 
+   function Go() {
+      api.openWin({
+            name: 'View',
+            url: './View.html',
+            animation:{
+                type:"push",
+                subType:"from_bottom",   
+                duration:400                
+            }
+         });
+   }
+ 
+ 
+</script>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+    <script src="../script/mdl/mdl_tem.js"></script>
+
+</head>
+
+
+<body>
+   <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">
+
+   	<header class="mdl-layout__header" style="background-color:#455A64">
+   	   	<div class="mdl-layout__header-row">
+
+   	   			<div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">arrow_back</i></div>
+
+
+
+   	   	      	<div class="mdl-layout-spacer"></div>
+   	   	      		<div id="control-main" style="display: none;">				</div>
+
+   	  			</div>
+
+   	  			<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color:#455A64">
+
+   	  				<a id="tab-first" href="#tab-first" class="mdl-layout__tab"><div id="_0">积土简介</div></a>
+
+
+   	  				<a id="tab-second" href="#tab-second" class="mdl-layout__tab">Chatting Group</a>
+
+
+   	 	</div>
+   	</header>
+
+
+
+
+    <main class="mdl-layout__content" style="width:100%">
+
+   <section class="mdl-layout__tab-panel is-active" style="padding-top:8px" id="tab-first">
+
+     <div class="mdl-cell mdl-card mdl-shadow--2dp" style="margin-top:10px; min-height:10px">
+            <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text" id="_1">...</h2>
+            </div>
+
+            <div class="mdl-card__supporting-text" id="_2">
+
+             </div>
+          </div>
+
+
+
+
+
+            <div class="mdl-cell mdl-card mdl-shadow--2dp" style="margin-top:12px">
+            <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text" id="_3"></h2>
+            </div>
+
+            <div class="mdl-card__supporting-text">
+
+                <div id="_4"></div>
+                <br>
+                <div id="_5"></div>
+                <hr />
+
+                <strong id="_6"></strong>
+
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+            <a onclick="Group_Page();" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Join the Chatting Group/加入官方群</a>
+            </div>
+
+            <div class="mdl-card__menu">
+            <button onclick="Group_Page();" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="material-icons">share</i></button>
+            </div>
+          </div>
+   </section>
+
+
+
+   <section class="mdl-layout__tab-panel is-active" id="tab-second">
+
+   <div class="mdl-cell mdl-card mdl-shadow--2dp" style="min-height:10px;">
+           <img id="title" style="width:100%" src="IMG URL">
+            <div class="mdl-card__supporting-text">
+            <div id="_7">扫码加入微信UKM积土官方交流群</div>
+
+             </div>
+          </div>
+
+        <div class="mdl-cell mdl-card mdl-shadow--2dp" style="min-height:10px;">
+            <div class="mdl-card__supporting-text">
+            <div><a>WhatsApp/...: </a>YOUR GOURP LINK URL<br>2huvZ</div>
+            <br>
+             <a onclick="_clips()" class="mdl-shadow--2dp mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-color-text--white" style="background:#455A64; float:right">
+                  <b id="_8">复制链接</b>
+       </a>
+             </div>
+          </div>
+
+
+   </section>
+
+    </main>
+  </div>
+
+</body>
+
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/Language/Information.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/jquery.gradientify.min.js"></script>
+<script type="text/javascript">
+
+
+  function Group_Page(){
+     var btn = document.getElementById('tab-second');
+     btn.click();
+  }
+
+  function _clips(){
+    var clipBoard = api.require('clipBoard');
+     clipBoard.set({
+        value: "https://chat.whatsapp.com/AETOPX8j4lZ5bF4Qu2huvZ"
+     }, function(ret, err) {
+     if (ret) {
+       api.toast({ msg: 'Copy successfully' });
+     } else {
+       alert(JSON.stringify(err));
+     }
+   });
+ }
+
+
+ apiready = function(){
+   _lang(5);
+   var btn = document.getElementById('tab-first');
+   btn.click();
+
+ }
+
+
+</script>
+</html>

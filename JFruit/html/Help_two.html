@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+       
+    <script src="../script/mdl/mdl_tem.js"></script>
+    
+    
+</head>
+
+</head>
+
+   <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">	
+   
+   	<header class="mdl-layout__header" style="background-color:#455A64">		
+   	   	<div class="mdl-layout__header-row">		
+   	   	
+   	   			<div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">arrow_back</i></div>
+   	   			
+   	   	
+   	   	   
+   	   	      	<div class="mdl-layout-spacer"></div>			
+   	   	      		<div id="control-main" style="display: none;">				</div>		
+   	  
+   	  			</div>			
+   	  			
+   	  			<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color:#455A64">			
+   	  			
+   	  				<a id="tab-first" href="#tab-first" class="mdl-layout__tab">舌尖上的中国</a>		
+   	  				
+   	  			 <a id="tab-second" href="#tab-second" class="mdl-layout__tab">费用须知</a>		
+   	  				
+   	 	</div>	
+   	</header>
+     
+     
+     
+     
+    <main class="mdl-layout__content" style="width:100%">
+    
+
+   <section class="mdl-layout__tab-panel is-active" style="padding-top:10px" id="tab-first">
+   
+   <div class="mdl-cell mdl-card mdl-shadow--2dp mdl-color--red-300" style="min-height: 30px;margin-top: 16px">
+   <div class="mdl-card__title" style="color: #ffffff;width: 100%;">
+      <div>
+         中国作为饮食大国，零食更是数不胜数。近几年越来越多的外国人喜欢上中国零食，还有不少外国人专门开视频和博文试吃介绍中国零食，壮哉我大中华美食 🇨🇳
+      </div>
+   </div>
+</div>
+   <div class="mdl-cell mdl-card mdl-shadow--2dp"> 
+            <div class="mdl-card__title"> 
+            <h2 class="mdl-card__title-text">购前须知</h2>
+            </div> 
+            
+            <div class="mdl-card__supporting-text">
+            
+               <a>▪</a>由于路途遥远，你需要支付<b>长途运费</b>，点我查看<a style="text-decoration:underline;">费用详情</a>
+               <br><br>
+              <a>▪</a>商品从开送到抵达宿舍大约需要<b>一周</b>的时间
+              <br><br>
+              <a>▪</a>商品一但发货，<b>无法中途取消订单</b>，在发货前请确认，以免造成不必要的麻烦
+              <br><br>
+              <a>▪</a>在确认订单后，我们会上门<b>面对面</b>支付订单(by cash)
+              <br><br>
+              <a>▪</a><b>敏感货物</b>需要交更多运费(每KG)
+                     
+             </div>
+          </div>
+          
+   </section>
+   
+   
+   <section class="mdl-layout__tab-panel is-active" style="padding-top:10px" id="tab-second">
+   
+   
+   <div class="mdl-cell mdl-card mdl-shadow--2dp"> 
+            <div class="mdl-card__title"> 
+            <h2 class="mdl-card__title-text">You have to know../须知</h2>
+            </div> 
+            
+            <div class="mdl-card__supporting-text">
+            ▪ 每个人最多同时执行两个进行中订单，购买时多加思索哦<br>
+            ▪ 每个订单包含了运费，一般在1-4RM<br>
+            ▪ 如有变故需取消订单请联系在订单页面获取积土联盟送货员联系方式要求他(她)取消。当然，此取消方式只能用于运送之前。<br>
+            ▪ 当前运送地址暂支持UKM个别宿舍([我的地址]页面中的那几个)，集中运送<br>
+            ▪ 对于商品在质量评价，运送评价，希望你能在交流群或者建议提交系统中提出<br>
+            ▪ 请确保你的联系方式可用，联盟送货员可能会通过它来通知你<br>
+            ▪ 完成后和骑手确认更新订单状态为<span class="mdl-label mdl-label__green">已完成</span>
+            <br>
+            <img style="margin-bottom:10px; width:100%" src="../image/security.png">
+             </div>
+                             
+                     
+                     
+            <div class="mdl-card__menu"> 
+            <button class="mdl-button mdl-button--icon">
+               <i class="material-icons">security</i>
+             </button>
+            </div> 
+            
+          </div> 
+   </section>
+	 	
+    </main>   
+  </div>
+  
+</body>
+
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript">
+
+ apiready = function(){ 
+ 
+   var btn = document.getElementById('tab-first');
+   btn.click();
+       
+ }
+ 
+    
+</script>
+</html>

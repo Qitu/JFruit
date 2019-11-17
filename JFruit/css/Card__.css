@@ -1,0 +1,56 @@
+.bbox{
+   border-bottom:0.3px solid rgba(0,0,0,0.5);
+   padding:15px 24px 12px 24px;
+   
+}
+
+.card-header{
+  width: 100%;
+  padding-left: 10px;
+}
+
+.card-img{
+  border-radius: 2px;
+  width: 60px; 
+  padding-top:0px;
+  z-index:6;
+  display: block;
+}
+
+.card-pad{
+  
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.card-title{
+  opacity: 0.87;
+  overflow: hidden;
+  height: 20px;
+}
+
+.title__text{
+  margin: 0;
+  overflow: hidden;
+  height: 20px;
+  background: -webkit-gradient(linear,20% 0%,100% 0%,from(#000000),to(#ffffff));
+  width: 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card-tag{
+  opacity: 0.8;
+}
+
+.card-hot{
+  margin-top:15px;
+  float: right;
+  padding-right:10px;
+}
+
+.list-show{
+  
+  padding:3px 5px 2px 5px;
+  
+}

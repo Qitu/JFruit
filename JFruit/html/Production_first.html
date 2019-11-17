@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="../css/mdl/Icon.css">
+    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
+    <link rel="stylesheet" href="../css/mdl/styles.css">
+    <link rel="stylesheet" href="../css/Lobby_box.css">
+    
+    
+    <script src="../script/mdl/mdl_tem.js"></script>
+    
+    
+    
+</head>
+     <style>
+       .bill-box{
+           position: absolute;
+           top:30px;
+           left:25px;
+           z-index:5;
+       }
+    </style>
+</head>
+<body onload="Animate_()">
+   <div class="demo-layout mdl-layout mdl-js-layout">
+      <header>
+        <img style="width:100%" src="../image/sneak_bg.jpg" />
+      
+    </header>
+    
+     <div class="bill-box">
+         <button onclick="_exit()" class="mdl-button mdl-js-button"><i class="material-icons md-42" style="color:#fff">clear</i></button>
+     </div>
+    
+     
+    <main class="mdl-layout__content">
+       <div style="margin: 25px auto;">
+              
+	      <div class="mdl-cell">
+	      
+	      
+		    
+		     <div id="box" class="main-box" style="display:none">
+		  
+		  <div class="box-title_main" style="text-align:center; margin-left:0px" id="_0">...</div>
+		  <div class="box-title_main mdl-color-text--red-300" style="text-align:center; margin-left:0px; display:none" id="err"></div>
+		  <hr />
+		  <div class="box_frame__" id="shops_box">	        
+             
+           
+
+             
+             
+    
+          </div>
+          <hr />
+  	   </div>				
+		
+		     <div style="margin:8px; font-size:15px; color: #BA4A00">
+            <b id="_1">	</b>
+		     </div>
+		       
+	       
+  	   </div>				
+	 </div>		
+	 
+	 	
+    </main>   
+  </div>
+  
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript" src="../script/jquery.js"></script>
+<script type="text/javascript" src="../script/shop/shop_list.js"></script>
+<script type="text/javascript" src="../script/Language/Information.js"></script>
+<script type="text/javascript">
+
+   
+  apiready = function(){    
+    _lang(7);
+    api.setRefreshHeaderInfo({ 
+      loadingImg: 'widget://image/refresh.png', 
+      bgColor: '#455A64', 
+      textColor: '#fff', 
+      textDown: '下拉刷新/Refresh...', 
+      textUp: '松开刷新/Refresh...' 
+   },function(ret, err) { 
+      _ajax();   
+   });   
+    $api.fixStatusBar($api.dom('hd'));
+    
+    api.addEventListener({
+       name: 'keyback'
+    }, function(ret, err){          
+       _exit();
+    });
+  }
+    
+</script>
+</html>
