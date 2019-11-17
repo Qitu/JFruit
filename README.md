@@ -1,4 +1,4 @@
-![JFruit](https://github.com/Qitu/JFruit/JFruit/image/jitu.png "JT logo")
+![JFruit](https://github.com/Qitu/JFruit/raw/master/JFruit/image/jitu.png "JT logo")
 JFruit
 =======
 ## 本项目已正式开源！如果你也是正在学习编程的朋友，希望这个项目能够从代码/内容创意上给到你帮助哈~
