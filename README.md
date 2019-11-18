@@ -32,7 +32,6 @@ The data will be stored in the database -> The couriers can accsee their dashboa
 * Method: POST
 - Body:  
 ```
-Output:  
 {  
  ret.status: "100", //success  
  ret.role: "0" //0-Normal user, 1-Couriers  
