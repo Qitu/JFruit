@@ -38,11 +38,11 @@ The data will be stored in the database -> The couriers can accsee their dashboa
  ret.token: "" //security token for user  
 }
 ```
-**Products list**  
-**Make an order** 
-**Get Ongoing Bill(s) (Couriers)**  
-**Finish orders (Couriers)**  
-**Delete completed or unwanted orders (Couriers)**  
+> **Products list**  
+> **Make an order** 
+> **Get Ongoing Bill(s) (Couriers)**  
+> **Finish orders (Couriers)**  
+> **Delete completed or unwanted orders (Couriers)**  
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Qitu/JFruit/raw/master/LICENSE.md) file for details
