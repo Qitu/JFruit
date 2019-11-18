@@ -33,6 +33,6 @@ The data will be stored in the database -> The couriers can accsee their dashboa
 - Products list
 * Make an order
 - Get Ongoing Bill(s) (Couriers)
-* Finish orders
-- Delete completed or unwanted orders
+* Finish orders (Couriers)
+- Delete completed or unwanted orders (Couriers)
    
