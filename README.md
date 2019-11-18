@@ -25,8 +25,7 @@ JFruit is an hybrid app build on APICLOUD Platform
 User registration -> User verification -> User sets his/her basic information including their address -> User add goods to the cart -> User confirm purchase ->
 The data will be stored in the database -> The couriers can accsee their dashboard to check the new orders -> Couriers change the delivered order's status to completed
    
-**APICLOUD third party model used**：  
-SMS verification  
+**APICLOUD third party model used**：SMS verification  
    
 ### About API:  
 * Register
