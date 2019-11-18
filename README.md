@@ -31,6 +31,7 @@ The data will be stored in the database -> The couriers can accsee their dashboa
 * Register
 ```
 /* JFruit\script\User_ensure.js on line 96: _ajax() */    
+
 Output:  
 {  
  ret.status: "100", //success  
