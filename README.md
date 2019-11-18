@@ -5,13 +5,12 @@ JFruit
   Author：Andy Xu，Email：andy@jitu.fun    
   
   
-**Overview**：  
+###Overview：  
 JFruit released on October 1, 2017，as the first project for the author during his studies.   
-It's made to provide an online shopping and delivery services mainly for fruits.
-It was a new and literally exciting experience to be an entrepreneur after graduation from high school in China.
+It was a new and literally exciting experience to be an entrepreneur after graduation from high school in China.  
   
-  **Technical Part**：  
-  JFruit is an hybrid app build on APICLOUD Platform
+ ###Technical Part：  
+ **JFruit is an hybrid app build on APICLOUD Platform**
 - [x] Chinese/English multi-language support
 - [x] It includes an authentiaction verification function using SMS service
 - [x] Flexible and Redevelopable API functions
@@ -22,7 +21,7 @@ It was a new and literally exciting experience to be an entrepreneur after gradu
 - [x] Image cache function
     
     
-**Business Logic**:
+ ###Business Logic:  
 User registration -> User verification -> User sets his/her basic information including their address -> User add goods to the cart -> User confirm purchase ->
 The data will be stored in the database -> The couriers can accsee their dashboard to check the new orders -> Couriers change the delivered order's status to completed
    
