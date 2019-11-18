@@ -1,21 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="../css/mdl/Icon.css">
-    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
-    <link rel="stylesheet" href="../css/mdl/styles.css">
-    <link rel="stylesheet" href="../css/Card__.css">
-    
-    <link rel="stylesheet" href="../css/sweetalert2.min.css">    
-    <script src="../script/sweetalert2.all.min.js"></script>
-    
-    <script src="../script/mdl/mdl_tem.js"></script>
-    
-    
-</head>
-    <style>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/mdl/Icon.css" />
+  <link rel="stylesheet" href="../css/mdl/mdl.min.css" />
+  <link rel="stylesheet" href="../css/mdl/styles.css" />
+  <link rel="stylesheet" href="../css/Card__.css" />
+  <link rel="stylesheet" href="../css/sweetalert2.min.css" />
+  <script src="../script/sweetalert2.all.min.js"></script>
+  <script src="../script/mdl/mdl_tem.js"></script>
+  <style>
        .bill-box{
            position: absolute;
            top:0px;
@@ -25,133 +20,120 @@
            display:none;
            background:rgba(0,0,0,0.2);
        }
-       
+
        .bill-enter{
            position: absolute;
            bottom:24px;
            right:23px;
            z-index:5;
        }
-       .u-flyer{      
+       .u-flyer{
        background-size:cover;
        width: 50px;
        position: fixed;
        z-index: 999;}
     </style>
-</head>
-<body>
-    <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">	
-   
-      	<header class="mdl-layout__header" id="hd" style="background-color:#455A64">		
-   	   	<div class="mdl-layout__header-row">		
-   	   	
-   	   			<div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">arrow_back</i></div>
-   	   			
-   	   
-   	  			</div>			
-   	  			
-   	  			<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color:#455A64" id="tab_box">			
-   	  			
-   	  		 <a id="tab-page" href="#message" class="mdl-layout__tab"><div id="_0">店铺告示</div></a>		
-   	  		 
-   	  				<a href="#page" class="mdl-layout__tab"><div id="_1">商品列表</div></a>				
-   	  		
-   	 	</div>	
-   	</header>
-   	
-   	
-     <div class="bill-enter">
-         <button onclick="Open_info()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color-text--white" style="background:#455A64"><i class="material-icons mdl-badge" id="shop-have" data-badge="0">shopping_cart</i></button>
+ </head>
+ <body>
+  <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">
+   <header class="mdl-layout__header" id="hd" style="background-color:#455A64">
+    <div class="mdl-layout__header-row">
+     <div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button">
+      <i class="material-icons md-42">arrow_back</i>
      </div>
-     
-     
-     <div class="bill-box" id="bg" style="text-align:center; padding-top:120px">
-     
-    
-        <div class="mdl-cell mdl-card mdl-shadow--4dp" style="text-align:left; min-height:0px"> 
-            <div class="mdl-card__title"> 
-            <h2 class="mdl-card__title-text" id="_2">购物车</h2>
-            </div> 
-            
-            <div class="mdl-card__supporting-text">
-            
-           <div style="margin:auto 0px auto 0px; overflow: auto;">
-           
-           
-            <table class="mdl-data-table mdl-js-data-table" style="display:none" id="tb"> 
-      						 <thead> 
-      						   <tr>
-      						     <th class="mdl-data-table__cell--non-numeric" id="_3">商品名称</th>
-      						     <th id="_4">数量</th><th id="_5">价格</th> <th id="_6">操作</th>   
-      						     </tr> 
-      						 </thead> 
-      				<tbody id="msg_bill"> 
-      				   <td class="mdl-data-table__cell--non-numeric" id="_7">运费</td><td>1</td><td><span class="mdl-label mdl-label__green" id="price_"></span></td><td><s id="_8">撒花</s></td>
-         </tbody> 
-         
+    </div>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color:#455A64" id="tab_box">
+     <a id="tab-page" href="#message" class="mdl-layout__tab">
+      <div id="_0">
+       店铺告示
+      </div></a>
+     <a href="#page" class="mdl-layout__tab">
+      <div id="_1">
+       商品列表
+      </div></a>
+    </div>
+   </header>
+   <div class="bill-enter">
+    <button onclick="Open_info()" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color-text--white" style="background:#455A64"><i class="material-icons mdl-badge" id="shop-have" data-badge="0">shopping_cart</i></button>
+   </div>
+   <div class="bill-box" id="bg" style="text-align:center; padding-top:120px">
+    <div class="mdl-cell mdl-card mdl-shadow--4dp" style="text-align:left; min-height:0px">
+     <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text" id="_2">购物车</h2>
+     </div>
+     <div class="mdl-card__supporting-text">
+      <div style="margin:auto 0px auto 0px; overflow: auto;">
+       <table class="mdl-data-table mdl-js-data-table" style="display:none" id="tb">
+        <thead>
+         <tr>
+          <th class="mdl-data-table__cell--non-numeric" id="_3">商品名称</th>
+          <th id="_4">数量</th>
+          <th id="_5">价格</th>
+          <th id="_6">操作</th>
+         </tr>
+        </thead>
+        <tbody id="msg_bill">
+         <tr>
+          <td class="mdl-data-table__cell--non-numeric" id="_7">运费</td>
+          <td>1</td>
+          <td><span class="mdl-label mdl-label__green" id="price_"></span></td>
+          <td>
+           <s id="_8">
+            撒花
+           </s></td>
+         </tr>
+        </tbody>
        </table>
       </div>
-
-        <div class="mdl-card__actions" style="margin-top:15px"> 
-            <a onclick="" class="mdl-button" disabled><b id="_9">总计: </b><b id="totally">0 </b>RM</a> 
-            <a id="bill-ensure" onclick="_ensure_bill()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" disabled><div id="_10">确认订单</div></a> 
-               </div>                                             
-            </div>
-         
-            
-            <div class="mdl-card__menu"> 
-            <button class="mdl-button mdl-button--icon" onclick="Close_info()">
-               <i class="material-icons">clear</i>
-             </button>
-            </div> 
-            
-          </div> 
+      <div class="mdl-card__actions" style="margin-top:15px">
+       <a onclick="" class="mdl-button" disabled=""><b id="_9">总计: </b><b id="totally">0 </b>RM</a>
+       <a id="bill-ensure" onclick="_ensure_bill()" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" disabled="">
+        <div id="_10">
+         确认订单
+        </div></a>
+      </div>
      </div>
-     
-     
-     
-    <main class="mdl-layout__content" style="width:100%" id="box-list">
-   
-  <section class="mdl-layout__tab-panel is-active" id="message">
-
-  </section>
-   
-  <section class="mdl-layout__tab-panel is-active" id="page">
-  </section>
-   
-    </main>   
+     <div class="mdl-card__menu">
+      <button class="mdl-button mdl-button--icon" onclick="Close_info()"> <i class="material-icons">clear</i> </button>
+     </div>
+    </div>
+   </div>
+   <main class="mdl-layout__content" style="width:100%" id="box-list">
+    <section class="mdl-layout__tab-panel is-active" id="message">
+    </section>
+    <section class="mdl-layout__tab-panel is-active" id="page">
+    </section>
+   </main>
   </div>
-  
-</body>
+  <script type="text/javascript" src="../script/api.js"></script>
+  <script type="text/javascript" src="../script/jquery.js"></script>
+  <script type="text/javascript" src="../script/shop/shop_cart.js"></script>
+  <script type="text/javascript" src="../script/shop/requestAnimationFrame.js"></script>
+  <script type="text/javascript" src="../script/shop/fly.js"></script>
+  <script type="text/javascript" src="../script/Language/Information.js"></script>
+  <script type="text/javascript">
 
-<script type="text/javascript" src="../script/api.js"></script>
-<script type="text/javascript" src="../script/jquery.js"></script>
-<script type="text/javascript" src="../script/shop/shop_cart.js"></script>
-<script type="text/javascript" src="../script/shop/requestAnimationFrame.js"></script>
-<script type="text/javascript" src="../script/shop/fly.js"></script>
-<script type="text/javascript" src="../script/Language/Information.js"></script>
-<script type="text/javascript">
- 
 
  function Open_info(){
        $("#bg").fadeIn(200);
  }
- 
- 
+
+
  function Close_info(){
      $("#bg").hide(200);
  }
- 
- 
+
+
  apiready = function(){
    $api.fixStatusBar($api.dom('hd')); 
    _lang(8);
-   Baseload(api.pageParam.ID,api.pageParam.price,api.pageParam.message); 
-   
+   Baseload(api.pageParam.ID,api.pageParam.price,api.pageParam.message);
+
    var btn = document.getElementById('tab-page');
    btn.click();
  }
- 
-    
+
+
 </script>
+ </body>
 </html>

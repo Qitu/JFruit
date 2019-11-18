@@ -6,78 +6,78 @@
     <link rel="stylesheet" href="../css/mdl/Icon.css">
     <link rel="stylesheet" href="../css/mdl/mdl.min.css">
     <link rel="stylesheet" href="../css/mdl/styles.css">
-       
+
     <script src="../script/mdl/mdl_tem.js"></script>
-    
-    
-</head>
+
 
 </head>
 
-   <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">	
-   
-   	<header class="mdl-layout__header" style="background-color:#455A64">		
-   	   	<div class="mdl-layout__header-row">		
-   	   	
+</head>
+
+   <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">
+
+   	<header class="mdl-layout__header" style="background-color:#455A64">
+   	   	<div class="mdl-layout__header-row">
+
    	   			<div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">arrow_back</i></div>
-   	   			
-   	   	
-   	   	   
-   	   	      	<div class="mdl-layout-spacer"></div>			
-   	   	      		<div id="control-main" style="display: none;">				</div>		
-   	  
-   	  			</div>			
-   	  			
-   	  			<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color:#455A64">			
-   	  			
-   	  				<a id="tab-first" href="#tab-first" class="mdl-layout__tab">初次购买</a>		
-   	  				
-   	  			 <a id="tab-second" href="#tab-second" class="mdl-layout__tab">用户须知</a>		
-   	  				
-   	 	</div>	
+
+
+
+   	   	      	<div class="mdl-layout-spacer"></div>
+   	   	      		<div id="control-main" style="display: none;">				</div>
+
+   	  			</div>
+
+   	  			<div class="mdl-layout__tab-bar mdl-js-ripple-effect" style="background-color:#455A64">
+
+   	  				<a id="tab-first" href="#tab-first" class="mdl-layout__tab">初次购买</a>
+
+   	  			 <a id="tab-second" href="#tab-second" class="mdl-layout__tab">用户须知</a>
+
+   	 	</div>
    	</header>
-     
-     
-     
-     
+
+
+
+
     <main class="mdl-layout__content" style="width:100%">
-    
+
 
    <section class="mdl-layout__tab-panel is-active" style="padding-top:10px" id="tab-first">
-   
-   
-   <div class="mdl-cell mdl-card mdl-shadow--2dp"> 
-            <div class="mdl-card__title"> 
+
+
+   <div class="mdl-cell mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">The process/流程介绍</h2>
-            </div> 
-            
-            <div class="mdl-card__supporting-text">         
+            </div>
+
+            <div class="mdl-card__supporting-text">
              <b>▪ 填</b>写正确地址信息(主页[我的地址]按钮)
-             
-         
+
+
              <br>
              <b>▪ 选</b>择目标店铺围观(美食店铺->进入区域)
              <br>
               <b>▪ 编</b>辑你需要的商品列表，订单确认后将会发送给骑手
-         
+
               <br>
               <b>▪ 等</b>待，送货员会将商品送到你所在的位置
-            
+
              </div>
-           
+
           </div>
-          
+
    </section>
-   
-   
+
+
    <section class="mdl-layout__tab-panel is-active" style="padding-top:10px" id="tab-second">
-   
-   
-   <div class="mdl-cell mdl-card mdl-shadow--2dp"> 
-            <div class="mdl-card__title"> 
+
+
+   <div class="mdl-cell mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">You have to know../须知</h2>
-            </div> 
-            
+            </div>
+
             <div class="mdl-card__supporting-text">
             ▪ 每个人最多同时执行两个进行中订单，购买时多加思索哦<br>
             ▪ 每个订单包含了运费，一般在1-4RM<br>
@@ -89,34 +89,32 @@
             <br>
             <img style="margin-bottom:10px; width:100%" src="../image/security.png">
              </div>
-                             
-                     
-                     
-            <div class="mdl-card__menu"> 
+
+
+
+            <div class="mdl-card__menu">
             <button class="mdl-button mdl-button--icon">
                <i class="material-icons">security</i>
              </button>
-            </div> 
-            
-          </div> 
+            </div>
+
+          </div>
    </section>
-	 	
-    </main>   
+
+    </main>
   </div>
-  
+
 </body>
 
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript" src="../script/jquery.js"></script>
 <script type="text/javascript">
 
- apiready = function(){ 
- 
+ apiready = function(){
    var btn = document.getElementById('tab-first');
    btn.click();
-       
  }
- 
-    
+
+
 </script>
 </html>

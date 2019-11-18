@@ -6,97 +6,90 @@
     <link rel="stylesheet" href="../css/mdl/Icon.css">
     <link rel="stylesheet" href="../css/mdl/mdl.min.css">
     <link rel="stylesheet" href="../css/mdl/styles.css">
-       
+
     <script src="../script/mdl/mdl_tem.js"></script>
-    
-    
-</head>
+
 
 </head>
 
-   <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">	
-   
-   	<header class="mdl-layout__header" style="background-color:#455A64">		
-   	   	<div class="mdl-layout__header-row">		
-   	   	
+</head>
+
+   <div style="margin: 0 auto;width: 100%;" class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer mdl-layout--fixed-tabs">
+
+   	<header class="mdl-layout__header" style="background-color:#455A64">
+   	   	<div class="mdl-layout__header-row">
+
    	   			<div role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">user</i></div>
-   	   			
-   	   	
-   	   	   
-   	   	      	<div class="mdl-layout-spacer"></div>			
-   	   	    
+
+
+
+   	   	      	<div class="mdl-layout-spacer"></div>
+
    	</header>
-         
+
     <main class="mdl-layout__content" style="width:100%">
-    
-   
-     <div class="mdl-cell mdl-card mdl-shadow--2dp" style="margin-top:12px"> 
-            <div class="mdl-card__title"> 
+
+
+     <div class="mdl-cell mdl-card mdl-shadow--2dp" style="margin-top:12px">
+            <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Language / 语言</h2>
-            </div> 
-            
-            <div class="mdl-card__supporting-text">           
+            </div>
+
+            <div class="mdl-card__supporting-text">
             This is multi-language System, please choose your language
             <br>
             <br>
             我们使用了多语言，现在请选择你的语言
              </div>
-            <div class="mdl-card__actions mdl-card--border"> 
-            <a onclick="C_lang('1');" class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" style="background-color:#E52948">中文</a> 
-             <a onclick="C_lang('2');" class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" style="background-color:#5F00B1">English</a> 
-             
-            </div> 
-                     
-          </div> 
-           
-          </div>
-   
-   
-    </main>   
+            <div class="mdl-card__actions mdl-card--border">
+            <a onclick="C_lang('1');" class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" style="background-color:#E52948">中文</a>
+             <a onclick="C_lang('2');" class="mdl-shadow--2dp mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--white" style="background-color:#5F00B1">English</a>
+
+            </div>
+
+         </div>
+
+       </div>
+
+    </main>
   </div>
-  
+
 </body>
 
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript" src="../script/jquery.js"></script>
 <script type="text/javascript">
 
- 
   function C_lang(type){
      if(type == '1'){
-        api.setPrefs({ 
-            key: 'lang', 
+        api.setPrefs({
+            key: 'lang',
             value: "ch"
          });
      }else{
-        api.setPrefs({ 
-            key: 'lang', 
+        api.setPrefs({
+            key: 'lang',
             value: "en"
          });
      }
      api.getPrefs({
-       key: 'phone' 
-       },function(ret, err) { 
+       key: 'phone'
+       },function(ret, err) {
         if(ret.value == ""){
-           api.openWin({ 
-              name: "View", 
-              url: './View.html', 
+           api.openWin({
+              name: "View",
+              url: './View.html',
               reload: true
-           }); 
+           });
         }else{
-           api.openWin({ 
-              name: "Lobby", 
+           api.openWin({
+              name: "Lobby",
               url: './Lobby.html',
               reload: true
            });
         }
     });
-  }  
-  
-  
- apiready = function(){         
- }
- 
-    
+  }
+
 </script>
 </html>

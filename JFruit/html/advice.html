@@ -1,78 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="../css/mdl/Icon.css">
-    <link rel="stylesheet" href="../css/mdl/mdl.min.css">
-    <link rel="stylesheet" href="../css/mdl/styles.css">
-    <link rel="stylesheet" href="../css/login.css">
-    
-    <script src="../script/mdl/mdl_tem.js"></script>
-    
-    
-    
-</head>
-
-</head>
-<body>
-   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header id="hd" class="mdl-layout__header wtx" style="background-color:#455A64">
-         <div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button"><i class="material-icons md-42">arrow_back</i></div>
-         <div style="margin-top:17px" class="mdl-layout__header-row">    
-               <span id="header" class="mdl-layout-title">建议提交中心～</span>   
-                
-              
-        </div>   
-        
-    </header>
-     
-     
-     
-    <main class="mdl-layout__content" id="backg">
-       <div style="margin: 25px auto;">
-          <div style="padding: 0 16px;">	
-          
-       
-		     <div style="width: 92%;overflow: auto; margin:auto auto auto auto;">					
-	            <table class="mdl-data-table mdl-js-data-table" style="width: 100%;margin: 10px 0;">			 
-	            
-				 <div style="width:100%" class="mdl-cell mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-				      <input type="text" maxlength="30" minlength="5" id="ensure" class="mdl-textfield__input"/> 
-				      <label class="mdl-textfield__label">您的建议</label>
-				      <span class="mdl-textfield__error">格式错误</span>
-				   </div> 						
-				  
-				   
-				
-		        <div id="tip" style="text-align:center" class="demo-cards mdl-cell mdl-cell--12-col mdl-color-text--red"></div>
-  			  </table>					
-	      </div>					
-	      
-	      
-	      
-	      <div class="mdl-cell mdl-cell--12-col ">
-		     <button id="btnbox" class="mdl-cell mdl-cell--6-col mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-color-text--white" style="background-color:#455A64"><b id="btn" >确认提交</b></button> 	
-          </div>
-	       
-  	   </div>				
-	 </div>		
-	 
-	 	
-    </main>   
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/mdl/Icon.css" />
+  <link rel="stylesheet" href="../css/mdl/mdl.min.css" />
+  <link rel="stylesheet" href="../css/mdl/styles.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <script src="../script/mdl/mdl_tem.js"></script>
+ </head>
+ <body>
+  <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+   <header id="hd" class="mdl-layout__header wtx" style="background-color:#455A64">
+    <div onclick="api.closeWin()" role="button" class="mdl-layout__drawer-button">
+     <i class="material-icons md-42">arrow_back</i>
+    </div>
+    <div style="margin-top:17px" class="mdl-layout__header-row">
+     <span id="header" class="mdl-layout-title">建议提交中心～</span>
+    </div>
+   </header>
+   <main class="mdl-layout__content" id="backg">
+    <div style="margin: 25px auto;">
+     <div style="padding: 0 16px;">
+      <div style="width: 92%;overflow: auto; margin:auto auto auto auto;">
+       <div style="width:100%" class="mdl-cell mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input type="text" maxlength="30" minlength="5" id="ensure" class="mdl-textfield__input" />
+        <label class="mdl-textfield__label">您的建议</label>
+        <span class="mdl-textfield__error">格式错误</span>
+       </div>
+       <div id="tip" style="text-align:center" class="demo-cards mdl-cell mdl-cell--12-col mdl-color-text--red"></div>
+       <table class="mdl-data-table mdl-js-data-table" style="width: 100%;margin: 10px 0;">
+       </table>
+      </div>
+      <div class="mdl-cell mdl-cell--12-col ">
+       <button id="btnbox" class="mdl-cell mdl-cell--6-col mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-color-text--white" style="background-color:#455A64"><b id="btn">确认提交</b></button>
+      </div>
+     </div>
+    </div>
+   </main>
   </div>
-  
-</body>
-<script type="text/javascript" src="../script/api.js"></script>
-<script type="text/javascript" src="../script/jquery.js"></script>
-<script type="text/javascript" src="../script/jquery.gradientify.min.js"></script>
-<script type="text/javascript">
+  <script type="text/javascript" src="../script/api.js"></script>
+  <script type="text/javascript" src="../script/jquery.js"></script>
+  <script type="text/javascript" src="../script/jquery.gradientify.min.js"></script>
+  <script type="text/javascript">
 
- 
-  apiready = function(){    
+
+  apiready = function(){
     $api.fixStatusBar($api.dom('hd'));
     $('#backg').gradientify({ gradients: [ { start: [49,76,172], stop: [242,159,191] }, { start: [255,103,69], stop: [240,154,241] }, { start: [33,229,241], stop: [235,236,117] } ] });
   }
-    
+
 </script>
+ </body>
 </html>
