@@ -28,10 +28,10 @@ The data will be stored in the database -> The couriers can accsee their dashboa
 **APICLOUD third party model used**：SMS verification  
    
 ## About APIs:  
-* Register
+* **Register** (JFruit\script\User_ensure.js on line 96: _ajax())
+  * Method: POST
+  - Body:  
 ```
-/* JFruit\script\User_ensure.js on line 96: _ajax() */    
-
 Output:  
 {  
  ret.status: "100", //success  
