@@ -10,7 +10,7 @@ JFruit released on October 1, 2017，as the first project for the author during 
 It was a new and literally exciting experience to be an entrepreneur after graduation from high school in China.  
   
  ### Technical Part：  
- **JFruit is an hybrid app build on APICLOUD Platform**
+JFruit is an hybrid app build on APICLOUD Platform  
 - [x] Chinese/English multi-language support
 - [x] It includes an authentiaction verification function using SMS service
 - [x] Flexible and Redevelopable API functions
@@ -25,7 +25,8 @@ It was a new and literally exciting experience to be an entrepreneur after gradu
 User registration -> User verification -> User sets his/her basic information including their address -> User add goods to the cart -> User confirm purchase ->
 The data will be stored in the database -> The couriers can accsee their dashboard to check the new orders -> Couriers change the delivered order's status to completed
    
-**APICLOUD third party model used**：SMS verification
+**APICLOUD third party model used**：  
+SMS verification  
    
 ### About API:  
 * Register
