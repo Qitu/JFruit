@@ -27,11 +27,18 @@ The data will be stored in the database -> The couriers can accsee their dashboa
    
 **APICLOUD third party model used**：SMS verification  
    
-### About API:  
+### About APIs:  
 * Register
+
+```
+Give examples
+```
 - Products list
 * Make an order
 - Get Ongoing Bill(s) (Couriers)
 * Finish orders (Couriers)
-- Delete completed or unwanted orders (Couriers)
+- Delete completed or unwanted orders (Couriers)  
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
    
