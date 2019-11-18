@@ -1,7 +1,7 @@
 ![JFruit](https://github.com/Qitu/JFruit/raw/master/JFruit/image/jitu.png "JT logo")  
 JFruit
 =======
-## This project has been officially open source, If your are learning programming, I hope it can help you, either by its codes or creativity~ 
+## This project has been officially open sourced, If your are learning programming, I hope it can help you, either by its codes or creativity~ 
   Author：Andy Xu，Email：andy@jitu.fun    
   
   
