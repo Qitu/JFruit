@@ -33,7 +33,7 @@ The data will be stored in the database -> The couriers can accsee their dashboa
 - Body:  
 ```
 {  
- ret.status: "100", //success  
+ ret.status: "200", //success  
  ret.role: "0" //0-Normal user, 1-Couriers  
  ret.token: "" //security token for user  
 }
@@ -43,6 +43,8 @@ The data will be stored in the database -> The couriers can accsee their dashboa
 > **Get Ongoing Bill(s) (Couriers)**  
 > **Finish orders (Couriers)**  
 > **Delete completed or unwanted orders (Couriers)**  
+
+//......
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Qitu/JFruit/raw/master/LICENSE.md) file for details
